@@ -5,3 +5,28 @@
   font-size: 62.5%;
   font-family: "Barlow", sans-serif;
 }
+
+// VARIABLES
+
+$primary-orange: #f16718;
+$secondary-orange: #ff9b62;
+$primary-blue: #162542;
+$secondary-blue: #7b8bad;
+$primary-gray: #e8eff2;
+
+body {
+  width: 100%;
+  align-items: center;
+}
+
+.header {
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    float: right;
+    font-size: 1.6rem;
+  }
+}

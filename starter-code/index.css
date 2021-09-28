@@ -6,4 +6,25 @@
   font-size: 62.5%;
   font-family: "Barlow", sans-serif;
 }
+
+body {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header a {
+  text-decoration: none;
+  float: right;
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=index.css.map */
