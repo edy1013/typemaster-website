@@ -14,19 +14,144 @@ $primary-blue: #162542;
 $secondary-blue: #7b8bad;
 $primary-gray: #e8eff2;
 
+
+// Reusable code
+
+.btn {
+  text-decoration: none;
+      float: right;
+      font-size: 1.6rem;
+      color: $primary-blue;
+      background-color: $primary-gray;
+      padding: 1.8rem 3rem;
+      border-radius: 1rem;
+}
+
+
+// Code 
+
+
+
 body {
   width: 100%;
   align-items: center;
+  position: relative;
 }
 
 .header {
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  height: 5.8rem;
 
-  a {
-    text-decoration: none;
-    float: right;
-    font-size: 1.6rem;
+  .header-main {
+    justify-content: center;
+    margin-top: 5.5rem;
+
+    img {
+      height: 4rem;
+      width: 4rem;
+      margin: 0.9rem auto;
+    }
   }
 }
+
+.main {
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 28px auto;
+  
+
+  .main-text {
+    margin: 0 auto 0 0;
+
+    h1 {
+      font-size: 5.6rem;
+      font-weight: 900;
+      color: $primary-blue;
+    }
+    
+    p {
+      margin-top: 2.4rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $secondary-blue;
+    }
+
+    .main-text--btn {
+      display: flex;
+      margin-top: 4rem;
+
+      a {
+        background-color: $primary-orange;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 4rem;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+
+  .main-image {
+    max-width: 540px;
+    max-height: 480px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3rem;
+    }
+  }
+
+  .box {
+    background-color: $primary-gray;
+    width: 110.5px;
+    height: 240px;
+    position: absolute;
+    right: 0;
+    top: 12vh;
+    border-radius: 20px 0 0 20px;
+  }
+
+}
+
+.images {
+  height: 480px;
+  display: flex;
+  gap: 1rem;
+
+  #first-image {
+    width: 255px;
+    height: 480px;
+  }
+  
+  #second-image {
+    width: 445px;
+    height: 480px;
+  }
+}
+
+.main-text--two {
+
+  align-items: center;
+  margin-left: auto;
+
+  h2 {
+    color: $primary-blue;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 900;
+  }
+
+  p {
+     margin-top: 2.4rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $secondary-blue;
+  }
+}
+
