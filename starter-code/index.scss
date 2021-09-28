@@ -127,11 +127,33 @@ body {
   #first-image {
     width: 255px;
     height: 480px;
+    border-radius: 11px;
+    overflow: hidden;
+   
   }
+
+  
+   .overlay {
+     position: relative;
+
+     span {
+      background: $primary-orange;
+      height: 100%;
+      z-index: 1;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      mix-blend-mode: multiply;
+     }
+   } 
   
   #second-image {
     width: 445px;
     height: 480px;
+    border-radius: 11px;
+    
   }
 }
 
@@ -161,7 +183,7 @@ body {
     height: 240px;
     position: absolute;
     left: 0;
-    top: 103.5vh;
+    top: 102.5vh;
     border-radius: 0 20px 20px 0;
 }
 
