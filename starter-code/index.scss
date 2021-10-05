@@ -53,6 +53,15 @@ body {
       width: 4rem;
       margin: 0.9rem auto;
     }
+
+    a {
+
+      &:hover {
+        color: white;
+        background-color: $primary-blue;
+      }
+    }
+    
   }
 }
 
@@ -87,6 +96,11 @@ body {
       a {
         background-color: $primary-orange;
         color: #ffffff;
+
+        &:hover {
+          color: white;
+          background-color: $secondary-orange;
+        }
       }
 
       p {
@@ -227,4 +241,71 @@ footer {
   font-weight: 700;
   color: $secondary-blue;
   text-align: center;
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+      width: 100%;
+    }
+
+    .header {
+      margin: 0;
+
+      .header-main {
+        width: 80%;
+        margin: 40px auto;
+        }
+        
+        
+    }
+
+    .main {
+      margin: 0;
+      position: relative;
+
+
+      .main-text  {
+
+        margin-left: 40px;
+        width: 50%;
+
+        h1 {
+          font-size: 4.8rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+        
+        .main-text--btn {
+          width: 100%;
+          a {
+            padding: 2rem 2rem;
+          }
+
+          p {
+            margin: 1.6rem 0 0 1rem;
+          }
+        }
+      }
+
+      .main-image {
+        position: absolute;
+        width: 68%;
+
+        right: -15rem;
+      }
+    }
+
+    
+
+    .box {
+      display: none;
+    }
+
 }

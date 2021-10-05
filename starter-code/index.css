@@ -47,6 +47,11 @@ body {
   margin: 0.9rem auto;
 }
 
+.header .header-main a:hover {
+  color: white;
+  background-color: #162542;
+}
+
 .main {
   height: 60vh;
   width: 80%;
@@ -86,6 +91,11 @@ body {
 .main .main-text .main-text--btn a {
   background-color: #f16718;
   color: #ffffff;
+}
+
+.main .main-text .main-text--btn a:hover {
+  color: white;
+  background-color: #ff9b62;
 }
 
 .main .main-text .main-text--btn p {
@@ -223,5 +233,49 @@ footer {
   font-weight: 700;
   color: #7b8bad;
   text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 100%;
+  }
+  .header {
+    margin: 0;
+  }
+  .header .header-main {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .main {
+    margin: 0;
+    position: relative;
+  }
+  .main .main-text {
+    margin-left: 40px;
+    width: 50%;
+  }
+  .main .main-text h1 {
+    font-size: 4.8rem;
+  }
+  .main .main-text p {
+    font-size: 1.6rem;
+  }
+  .main .main-text .main-text--btn {
+    width: 100%;
+  }
+  .main .main-text .main-text--btn a {
+    padding: 2rem 2rem;
+  }
+  .main .main-text .main-text--btn p {
+    margin: 1.6rem 0 0 1rem;
+  }
+  .main .main-image {
+    position: absolute;
+    width: 68%;
+    right: -15rem;
+  }
+  .box {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
