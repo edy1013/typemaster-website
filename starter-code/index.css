@@ -61,7 +61,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 28px auto;
+  margin: 8.3rem auto;
 }
 
 .main .main-text {
@@ -161,6 +161,18 @@ body {
   border-radius: 11px;
 }
 
+.main-two {
+  height: 60vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8.3rem auto;
+}
+
 .main-text--two {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -235,24 +247,26 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
     width: 100%;
   }
   .header {
     margin: 0;
+    width: 100%;
   }
   .header .header-main {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
   }
   .main {
     margin: 0;
     position: relative;
+    width: 100%;
   }
   .main .main-text {
     margin-left: 40px;
-    width: 50%;
+    width: 100%;
   }
   .main .main-text h1 {
     font-size: 4.8rem;
@@ -270,11 +284,55 @@ footer {
     margin: 1.6rem 0 0 1rem;
   }
   .main .main-image {
-    position: absolute;
-    width: 68%;
-    right: -15rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .main .main-image img {
+    width: 150%;
+    height: 150%;
+    margin-left: 33px;
   }
   .box {
+    display: none;
+  }
+  .main-two .images {
+    margin-left: 40px;
+  }
+  .main-text--two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-text--two p {
+    width: 50%;
+    text-align: center;
+  }
+  .main-text--two p br {
+    display: none;
+  }
+  .box-two {
+    display: none;
+  }
+  .futures {
+    height: auto;
+    margin: 10rem auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+  }
+  .futures .col {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .futures .col p {
+    width: 90%;
+  }
+  .futures .col p br {
     display: none;
   }
 }

@@ -70,7 +70,7 @@ body {
   width: 80%;
   display: flex;
   align-items: center;
-  margin: 28px auto;
+  margin: 8.3rem auto;
   
 
   .main-text {
@@ -171,6 +171,14 @@ body {
   }
 }
 
+.main-two {
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 8.3rem auto;
+}
+
 .main-text--two {
 
   align-items: center;
@@ -247,7 +255,7 @@ footer {
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+   {
 
     body {
       width: 100%;
@@ -255,9 +263,10 @@ footer {
 
     .header {
       margin: 0;
+      width: 100%;
 
       .header-main {
-        width: 80%;
+        width: 90%;
         margin: 40px auto;
         }
         
@@ -267,12 +276,12 @@ footer {
     .main {
       margin: 0;
       position: relative;
-
+      width: 100%;
 
       .main-text  {
 
         margin-left: 40px;
-        width: 50%;
+        width: 100%;
 
         h1 {
           font-size: 4.8rem;
@@ -295,10 +304,15 @@ footer {
       }
 
       .main-image {
-        position: absolute;
-        width: 68%;
+        
+        width: 100%;
+        overflow: hidden;
 
-        right: -15rem;
+        img {
+          width: 150%;
+          height: 150%;
+          margin-left: 33px;
+        }
       }
     }
 
@@ -306,6 +320,52 @@ footer {
 
     .box {
       display: none;
+    }
+
+    .main-two {
+
+      .images {
+        margin-left: 40px
+      }
+    }
+
+    .main-text--two {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        width: 50%;
+        text-align: center;
+        
+       br {
+         display: none;
+       }
+      }
+    }
+
+    .box-two {
+      display: none;
+      
+    }
+
+    .futures {
+      height: auto;
+      margin: 10rem auto;
+      flex-wrap: wrap;
+      width: 90%;
+
+      .col {
+        width: 50%;
+        margin-bottom: 2rem;
+        
+        p {
+          width: 90%;
+          br {
+            display: none;
+          }
+        }
+      }
     }
 
 }
