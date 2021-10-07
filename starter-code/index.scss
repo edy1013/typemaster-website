@@ -176,13 +176,13 @@ body {
   width: 80%;
   display: flex;
   align-items: center;
-  margin: 8.3rem auto;
+  margin: 20rem auto;
 }
 
 .main-text--two {
 
   align-items: center;
-  margin-left: auto;
+  margin-left: 20rem;
 
   h2 {
     color: $primary-blue;
@@ -252,17 +252,14 @@ footer {
 }
 
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-   {
+@media (max-width: 1024px) {
 
     body {
       width: 100%;
     }
 
     .header {
-      margin: 0;
+      margin: 5rem auto;
       width: 100%;
 
       .header-main {
@@ -277,6 +274,7 @@ footer {
       margin: 0;
       position: relative;
       width: 100%;
+      overflow: hidden;
 
       .main-text  {
 
@@ -323,7 +321,10 @@ footer {
     }
 
     .main-two {
-
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
       .images {
         margin-left: 40px
       }
@@ -333,6 +334,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      margin: 0 auto;
 
       p {
         width: 50%;
@@ -368,4 +370,23 @@ footer {
       }
     }
 
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .main-image {
+      width: 100%;
+      margin-left: 5rem;
+      margin-top: 5rem;
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
